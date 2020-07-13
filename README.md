@@ -1,3 +1,23 @@
+# Project Setup
+
+## Installing Dependencies
+
+Install dependencies using:
+
+`yarn install`
+
+## Run Application
+
+Run the project after installing dependencies using:
+
+`yarn start`
+
+# Assignment Problem Statement
+
+Make a web app using React which shows videos in a full screen feed similar to the Rizzle app. On swiping up and down, it should go to the next and previous video respectively. On swiping right, it should go to a screen which shows the name of the person who created the video. Use React to make the app, and do not use any external libraries. Code will be evaluated based on functionality, performance and maintainability and extensibility of the code itself.
+
+---
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
