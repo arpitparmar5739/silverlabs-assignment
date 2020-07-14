@@ -3,4 +3,5 @@ export const SWIPE_DIRECTIONS = {
   DOWN: "DOWN",
   LEFT: "LEFT",
   RIGHT: "RIGHT",
+  TOUCH: "TOUCH",
 };

@@ -2,6 +2,12 @@
   width: 100%;
   height: 100%;
   position: absolute;
+  left: 0;
+  transition: left 0.5s;
+}
+
+.homeContainerUserInfo {
+  left: -100%;
 }
 
 .videoContainer,
@@ -9,15 +15,26 @@
   width: 100%;
   height: 100%;
   overflow: hidden;
-  position: absolute;
+  left: 0;
+  transition: left 0.5s;
+}
+
+.videoContainerActive {
+  left: -100%;
 }
 
 .userInfoContainer {
+  left: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 32px;
   background-color: #757575;
+  position: absolute;
+}
+
+.userInfoContainerActive {
+  left: 0;
 }
 
 .userInfoBlock {
@@ -25,10 +42,15 @@
   padding: 10px;
 }
 
-.videoControl {
+.videoControlAndInfo {
   width: 100%;
   height: 100%;
   position: absolute;
+}
+
+.videoControl {
+  width: 100%;
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -42,7 +64,7 @@
   width: 100%;
   color: white;
   font-size: 20px;
-  position: absolute;
   text-align: center;
   margin-bottom: 10px;
+  position: absolute;
 }

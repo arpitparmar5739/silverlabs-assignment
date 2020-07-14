@@ -10,7 +10,7 @@ function App() {
       {windowSize && windowSize.width > 767 ? (
         <div className={styles.message}>Please use a mobile device.</div>
       ) : (
-        <Home />
+        <Home windowSize={windowSize} />
       )}
     </div>
   );

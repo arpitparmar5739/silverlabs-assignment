@@ -16,11 +16,11 @@ export default function useGestures(ref, handleSwipe) {
       startX = touchobj.pageX;
       startY = touchobj.pageY;
       startTime = new Date().getTime();
-      // event.preventDefault();
+      event.preventDefault();
     };
 
     const handleTouchMove = (event) => {
-      // event.preventDefault();
+      event.preventDefault();
     };
 
     const handleTouchEnd = (event) => {
@@ -39,9 +39,11 @@ export default function useGestures(ref, handleSwipe) {
         ) {
           swipeDir = distY < 0 ? SWIPE_DIRECTIONS.UP : SWIPE_DIRECTIONS.DOWN; // If dist traveled is negative, it indicates up swipe
         }
+        handleSwipe(swipeDir);
       }
-      handleSwipe(swipeDir);
-      // console.log(swipeDir);
+
+      if (distY + distX === 0) handleSwipe(SWIPE_DIRECTIONS.TOUCH);
+      // console.log(swipeDir, distX, distY);
     };
 
     element.addEventListener("touchstart", handleTouchStart);
